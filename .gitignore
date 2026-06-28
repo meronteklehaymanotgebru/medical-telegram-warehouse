@@ -1,0 +1,32 @@
+# Environment
+.env
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+
+# Data – ignore raw & processed, but keep the folder structure in Git
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Images downloaded by scraper
+data/raw/images/
+
+# dbt artifacts
+medical_warehouse/target/
+medical_warehouse/dbt_packages/
+medical_warehouse/logs/
+
+# OS
+.DS_Store
+Thumbs.db
